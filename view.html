@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <title>Tank Game</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src = physics.js></script>
+    <script type = "text/javascript" src = matter.js></script>
+    <script type = "text/javascript" src = physics.js></script>
 </head>
 <body>
 <p id = "title">Tank Game</p>
 <br>
 <canvas id = "canvas"></canvas>
-<button id = "test1" class = "button">Test Button 1</button>
-<button id = "test2" class = "button">Test Button 2</button>
-<button id = "test3" class = "button">Test Button 3</button>
+<button id = "test1" class = "button" onclick="initialize()">Start</button>
+<button id = "test2" class = "button" onclick="rotateTank()">Rotate</button>
+<button id = "test3" class = "button" onclick="shootAmmo()">Shoot</button>
 <br>
 <p id = "powerText">Power: </p>
 </body>
