@@ -94,8 +94,8 @@ function createRect(x, y, w, h) {
     return createObject(vertices);
 }
 
-function createCircle(radius) {
-    var circle = Matter.Bodies.circle(50, 50, radius);
+function createCircle(x, y, radius) {
+    var circle = Matter.Bodies.circle(x, y, radius);
     objects.push(createObject(circle.vertices));
 }
 
