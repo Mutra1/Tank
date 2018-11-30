@@ -94,6 +94,11 @@ function createRect(x, y, w, h) {
     return createObject(vertices);
 }
 
+function createCircle(radius) {
+    var circle = Matter.Bodies.circle(50, 50, radius);
+    objects.push(createObject(circle.vertices));
+}
+
 function createPolygon(x1, x2, x3, x4, y1, y2, y3, y4) {
     //UP TO 4 SIDES
     var polygon = {};
@@ -131,7 +136,7 @@ function createObject(vertices) {
   @return
   Object that contains the x and y
 */
-function createVertex(x, y) {
+function createVertex(x,y) {
     return { x: x, y: y };
 }
 
